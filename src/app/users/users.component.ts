@@ -12,7 +12,7 @@ export class UsersComponent implements OnInit {
 
   ngOnInit() {
     this.data.getUserData().subscribe(d => {
-      this.users['arr']=d;
+      this.users=d;
     });
   }
 

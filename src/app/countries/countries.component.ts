@@ -11,9 +11,9 @@ export class CountriesComponent implements OnInit {
 
   ngOnInit() {
     this.data.getCountries().subscribe( d => {
-      this.countr['arr'] = d;
-      this.countr['arr'].splice(0,0,this.countr['arr'][104])
-      this.countr['arr'].splice(105,1)
+      this.countr = d;
+      //this.countr.splice(0,0,this.countr[104])
+      //this.countr.splice(105,1)
     });
   }
 

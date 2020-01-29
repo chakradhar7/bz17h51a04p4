@@ -6,13 +6,13 @@ import { DataService} from '../data.service'
   styleUrls: ['./color.component.css']
 })
 export class ColorComponent implements OnInit {
-  color = {}
+  col = {}
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
     this.data.getColors().subscribe(d => {
-      this.color=d;
+      this.col=d;
     })
   }
 
